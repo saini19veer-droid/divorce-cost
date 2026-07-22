@@ -148,6 +148,11 @@ input,select{padding:9px 13px;border:1.5px solid var(--slate-200);border-radius:
 input:focus,select:focus{border-color:var(--teal);background:#fff;box-shadow:0 0 0 3px rgba(13,148,136,.1)}
 input:hover,select:hover{border-color:#99f6e4}
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+
+.state-nav-select{appearance:none;-webkit-appearance:none;background:var(--white) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="%23475569"><path d="M5.5 7.5l4.5 5 4.5-5"/></svg>') no-repeat right 10px center/12px;border:1px solid var(--slate-200);border-radius:20px;padding:7px 30px 7px 14px;font-family:var(--font);font-size:13px;font-weight:600;color:var(--slate-600);cursor:pointer;transition:all .15s}
+.state-nav-select:hover{background-color:var(--teal-light);color:var(--teal-darker);border-color:var(--teal)}
+.state-nav-select:focus{outline:2px solid var(--teal);outline-offset:1px}
+@media(max-width:640px){.state-nav-select{font-size:12px;padding:6px 26px 6px 10px}}
 @media(max-width:480px){.two-col{grid-template-columns:1fr}}
 .input-wrap{position:relative}
 .input-prefix{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--slate-400);font-size:14px;pointer-events:none}
@@ -313,6 +318,59 @@ footer a:hover{color:var(--slate-900)}
   </a>
   <div class="header-right">
     <nav class="header-nav no-print">
+      <select class="state-nav-select" id="state-nav-select" aria-label="Jump to your state's divorce cost page" onchange="if(this.value) window.location.href=this.value;">
+        <option value="">Browse by State ▾</option>
+          <option value="/divorce-cost-alabama/">Alabama</option>
+          <option value="/divorce-cost-alaska/">Alaska</option>
+          <option value="/divorce-cost-arizona/">Arizona</option>
+          <option value="/divorce-cost-arkansas/">Arkansas</option>
+          <option value="/divorce-cost-california/">California</option>
+          <option value="/divorce-cost-colorado/">Colorado</option>
+          <option value="/divorce-cost-connecticut/">Connecticut</option>
+          <option value="/divorce-cost-delaware/">Delaware</option>
+          <option value="/divorce-cost-florida/">Florida</option>
+          <option value="/divorce-cost-georgia/">Georgia</option>
+          <option value="/divorce-cost-hawaii/">Hawaii</option>
+          <option value="/divorce-cost-idaho/">Idaho</option>
+          <option value="/divorce-cost-illinois/">Illinois</option>
+          <option value="/divorce-cost-indiana/">Indiana</option>
+          <option value="/divorce-cost-iowa/">Iowa</option>
+          <option value="/divorce-cost-kansas/">Kansas</option>
+          <option value="/divorce-cost-kentucky/">Kentucky</option>
+          <option value="/divorce-cost-louisiana/">Louisiana</option>
+          <option value="/divorce-cost-maine/">Maine</option>
+          <option value="/divorce-cost-maryland/">Maryland</option>
+          <option value="/divorce-cost-massachusetts/">Massachusetts</option>
+          <option value="/divorce-cost-michigan/">Michigan</option>
+          <option value="/divorce-cost-minnesota/">Minnesota</option>
+          <option value="/divorce-cost-mississippi/">Mississippi</option>
+          <option value="/divorce-cost-missouri/">Missouri</option>
+          <option value="/divorce-cost-montana/">Montana</option>
+          <option value="/divorce-cost-nebraska/">Nebraska</option>
+          <option value="/divorce-cost-nevada/">Nevada</option>
+          <option value="/divorce-cost-new-hampshire/">New Hampshire</option>
+          <option value="/divorce-cost-new-jersey/">New Jersey</option>
+          <option value="/divorce-cost-new-mexico/">New Mexico</option>
+          <option value="/divorce-cost-new-york/">New York</option>
+          <option value="/divorce-cost-north-carolina/">North Carolina</option>
+          <option value="/divorce-cost-north-dakota/">North Dakota</option>
+          <option value="/divorce-cost-ohio/">Ohio</option>
+          <option value="/divorce-cost-oklahoma/">Oklahoma</option>
+          <option value="/divorce-cost-oregon/">Oregon</option>
+          <option value="/divorce-cost-pennsylvania/">Pennsylvania</option>
+          <option value="/divorce-cost-rhode-island/">Rhode Island</option>
+          <option value="/divorce-cost-south-carolina/">South Carolina</option>
+          <option value="/divorce-cost-south-dakota/">South Dakota</option>
+          <option value="/divorce-cost-tennessee/">Tennessee</option>
+          <option value="/divorce-cost-texas/">Texas</option>
+          <option value="/divorce-cost-utah/">Utah</option>
+          <option value="/divorce-cost-vermont/">Vermont</option>
+          <option value="/divorce-cost-virginia/">Virginia</option>
+          <option value="/divorce-cost-washington/">Washington</option>
+          <option value="/divorce-cost-west-virginia/">West Virginia</option>
+          <option value="/divorce-cost-wisconsin/">Wisconsin</option>
+          <option value="/divorce-cost-wyoming/">Wyoming</option>
+      </select>
       <a href="/blog/" class="header-nav-link">Blog</a>
       <a href="/about.html" class="header-nav-link">About</a>
     </nav>
